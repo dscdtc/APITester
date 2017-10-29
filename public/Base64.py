@@ -1,0 +1,1 @@
+adbd = base64.b64encode(crypto)
