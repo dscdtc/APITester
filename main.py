@@ -5,21 +5,14 @@
 #参考文档：https://www.bstester.com/2015/08/interface-test-automation-scheme-details
 ####http://blog.csdn.net/iloveyin/article/details/21444613
 #仅适用于定义好的case模板
-try:
-    import xlrd
-except:
-    os.system('pip install -U xlrd')
-    import xlrd
-try:
-    import xlwt
-except:
-    os.system('pip install -U xlwt')
-    import xlwt
-
 import sys,os
+import xlrd
+import xlwt
+
 sys.path.append("..\\")
 reload(sys)
 sys.setdefaultencoding('utf-8')
+
 from public import *
 from xlutils.copy import copy
 import re
